@@ -9,6 +9,6 @@ const io = socketio(server)
 io.on('connection', socket => {
     console.log(socket.id)
     socket.on('move', (selectedId, position, promote) => {
-        socket.broadcast
+        socket.broadcast()
     })
 })
